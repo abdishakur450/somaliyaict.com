@@ -1,17 +1,108 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> University Websidte Design - Easy Tutorials</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <section> class="header">
-
-        </section>
-        
-    
-        </section>
-    </body>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Tracker</h1>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Add new task" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+#task-form {
+    margin-bottom: 20px;
+}
+#task-input {
+    width: calc(100% - 30px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background: #0056b3;
+}
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+#task-list li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#task-list li button {
+    background: #dc3545;
+}
+#task-list li button:hover {
+    background: #c82333;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('task-form');
+    const taskInput = document.getElementById('task-input');
+    const taskList = document.getElementById('task-list');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const taskText = taskInput.value.trim();
+        if (taskText) {
+            addTask(taskText);
+            taskInput.value = '';
+        }
+    });
+
+    function addTask(task) {
+        const li = document.createElement('li');
+        li.textContent = task;
+
+        const deleteBtn = document.createElement('button');
+        deleteBtn.textContent = 'Delete';
+        deleteBtn.addEventListener('click', () => {
+            taskList.removeChild(li);
+        });
+
+        li.appendChild(deleteBtn);
+        taskList.appendChild(li);
+    }
+});
+
