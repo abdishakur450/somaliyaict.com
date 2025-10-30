@@ -3,120 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersecurity Best Practices Labs</title>
+    <title>Cybersecurity Education Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* CSS for styling the page */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f4f8;
             color: #333;
         }
         header {
-            background-color: #007bff;
+            background: linear-gradient(135deg, #007bff, #00c6ff);
             color: white;
-            padding: 20px;
+            padding: 60px 20px;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         header h1 {
+            font-size: 3em;
             margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffd700;
         }
         .container {
             max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+            padding: 0 20px;
         }
         section {
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
         h2 {
             color: #007bff;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 30px;
         }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
+        .intro {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
-        .lab {
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
+        .intro-text {
+            flex: 1;
+            padding-right: 20px;
         }
-        .lab h3 {
-            margin-top: 0;
+        .intro-img {
+            flex: 1;
+            max-width: 500px;
+        }
+        .intro-img img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .practices {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .practice-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .practice-card:hover {
+            transform: translateY(-10px);
+        }
+        .practice-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+        .practice-card h3 {
             color: #28a745;
+            margin-bottom: 10px;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        .labs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .lab-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .lab-card:hover {
+            transform: translateY(-10px);
+        }
+        .lab-card img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+        .lab-card h3 {
+            color: #28a745;
+            margin: 15px 0 10px;
         }
         footer {
-            text-align: center;
-            padding: 10px;
             background-color: #007bff;
             color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Cybersecurity Best Practices Labs</h1>
-        <p>Learn and practice essential cybersecurity best practices through interactive labs.</p>
+        <h1>Cybersecurity Education Hub</h1>
+        <p>Empowering Students with Essential Cybersecurity Knowledge and Skills</p>
     </header>
+
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#practices">Best Practices</a>
+        <a href="#labs">Hands-On Labs</a>
+    </nav>
 
     <div class="container">
         <section id="introduction">
-            <h2>Introduction to Cybersecurity Best Practices</h2>
-            <p>Cybersecurity is crucial in today's digital world. This page provides an overview of best practices and hands-on labs to help you understand and implement them.</p>
-            <img src="https://images.unsplash.com/photo-1558494949-ef0d38d49b31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Cybersecurity concept image">
+            <h2>Welcome to Cybersecurity Learning</h2>
+            <div class="intro">
+                <div class="intro-text">
+                    <p>In today's digital age, understanding cybersecurity is crucial for everyone, especially students who are constantly online. This hub provides engaging resources, best practices, and interactive labs to help you stay safe in the cyber world.</p>
+                    <p>Learn how to protect your data, recognize threats, and build secure habits!</p>
+                </div>
+                <div class="intro-img">
+                    <img src="https://i.ytimg.com/vi/6dXcWFdR1oo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAs67ddLw3ZBU-AVkHbXZiv2_gxeg" alt="Cybersecurity Poster Illustration">
+                </div>
+            </div>
         </section>
 
-        <section id="best-practices">
-            <h2>Key Best Practices</h2>
-            <ul>
-                <li>Use strong, unique passwords for all accounts.</li>
-                <li>Enable multi-factor authentication (MFA) wherever possible.</li>
-                <li>Keep software and systems up to date with the latest patches.</li>
-                <li>Be cautious with email attachments and links from unknown sources.</li>
-                <li>Regularly back up important data.</li>
-                <li>Use antivirus software and firewalls.</li>
-                <li>Educate yourself on phishing and social engineering tactics.</li>
-            </ul>
-            <img src="https://images.unsplash.com/photo-1563986768609-620da13593c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Cybersecurity best practices illustration">
+        <section id="practices">
+            <h2>Key Cybersecurity Best Practices</h2>
+            <div class="practices">
+                <div class="practice-card">
+                    <img src="https://thumbs.dreamstime.com/b/cute-d-shield-character-promoting-cybersecurity-data-protection-charming-rendered-cartoon-padlock-symbolizing-385855632.jpg" alt="Shield Icon">
+                    <h3>Strong Passwords</h3>
+                    <p>Use unique, complex passwords and a password manager.</p>
+                </div>
+                <div class="practice-card">
+                    <img src="https://thumbs.dreamstime.com/b/charming-cartoon-girl-using-computer-cybersecurity-desk-charming-cartoon-girl-depicted-using-computer-keyboard-393712408.jpg" alt="MFA Illustration">
+                    <h3>Multi-Factor Authentication</h3>
+                    <p>Enable MFA on all accounts for extra security.</p>
+                </div>
+                <div class="practice-card">
+                    <img src="https://i.ytimg.com/vi/kHc7gdOb37I/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB_PUgjXyRiqkTrvYtvlyAIEFLf0w" alt="Update Software">
+                    <h3>Regular Updates</h3>
+                    <p>Keep your software and devices updated to patch vulnerabilities.</p>
+                </div>
+                <div class="practice-card">
+                    <img src="https://i.ytimg.com/vi/jdyrGdhtJ-Q/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCsLoGxAjA3ov6qJvGbGVIKOMQulQ" alt="Phishing Awareness">
+                    <h3>Avoid Phishing</h3>
+                    <p>Be cautious with emails and links from unknown sources.</p>
+                </div>
+            </div>
         </section>
 
         <section id="labs">
-            <h2>Hands-On Labs</h2>
-            <div class="lab">
-                <h3>Lab 1: Password Strength Testing</h3>
-                <p>Test the strength of passwords using online tools or simple scripts. Objective: Understand what makes a password strong.</p>
-                <img src="https://images.unsplash.com/photo-1585079542156-2755d9c8a60d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Password security image">
-            </div>
-            <div class="lab">
-                <h3>Lab 2: Setting Up MFA</h3>
-                <p>Enable MFA on a sample account (e.g., email). Objective: Learn how MFA adds an extra layer of security.</p>
-                <img src="https://images.unsplash.com/photo-1614064641938-3bbe7a941ac9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="MFA setup image">
-            </div>
-            <div class="lab">
-                <h3>Lab 3: Phishing Detection</h3>
-                <p>Analyze sample emails to identify phishing attempts. Objective: Recognize common phishing indicators.</p>
-                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Phishing email detection">
+            <h2>Interactive Labs for Students</h2>
+            <div class="labs">
+                <div class="lab-card">
+                    <img src="https://www.shutterstock.com/image-photo/profile-side-view-portrait-attractive-600nw-2148239031.jpg" alt="Password Lab">
+                    <h3>Lab 1: Password Strength Challenge</h3>
+                    <p>Create and test strong passwords using online tools. Learn what makes a password secure.</p>
+                </div>
+                <div class="lab-card">
+                    <img src="https://thumbs.dreamstime.com/b/charming-cartoon-girl-using-computer-cybersecurity-desk-charming-cartoon-girl-depicted-using-computer-keyboard-393712408.jpg" alt="MFA Lab">
+                    <h3>Lab 2: Setting Up MFA</h3>
+                    <p>Practice enabling multi-factor authentication on demo accounts.</p>
+                </div>
+                <div class="lab-card">
+                    <img src="https://i.ytimg.com/vi/kHc7gdOb37I/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB_PUgjXyRiqkTrvYtvlyAIEFLf0w" alt="Phishing Lab">
+                    <h3>Lab 3: Phishing Detection Game</h3>
+                    <p>Identify phishing emails in simulated scenarios and learn to spot red flags.</p>
+                </div>
             </div>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2025 Cybersecurity Labs. All rights reserved.</p>
+        <p>&copy; 2025 Cybersecurity Education Hub. All rights reserved. | Designed for Students</p>
     </footer>
 </body>
 </html>
