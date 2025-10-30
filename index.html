@@ -3,59 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Solutions</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Cybersecurity Best Practices Labs</title>
+    <style>
+        /* CSS for styling the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #007bff;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .lab {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .lab h3 {
+            margin-top: 0;
+            color: #28a745;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Cybersecurity Best Practices Labs</h1>
+        <p>Learn and practice essential cybersecurity best practices through interactive labs.</p>
     </header>
-    
-    <section id="home">
-        <h1>Welcome to IT Solutions and Cloud Security </h1>
-        <p>Your partner in solving all your tech challenges.</p>
-    </section>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Network Setup & Maintenance</li>
-            <li>Cloud Computing Solutions</li>
-            <li>IT Consultation</li>
-            <li>Cybersecurity Services</li>
-        </ul>
-    </section>
+    <div class="container">
+        <section id="introduction">
+            <h2>Introduction to Cybersecurity Best Practices</h2>
+            <p>Cybersecurity is crucial in today's digital world. This page provides an overview of best practices and hands-on labs to help you understand and implement them.</p>
+            <img src="https://images.unsplash.com/photo-1558494949-ef0d38d49b31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Cybersecurity concept image">
+        </section>
 
-    <section id="blog">
-        <h2>Latest Blog Posts</h2>
-        <ul>
-            <li><a href="#">How to Protect Your Data from Cyber Threats</a></li>
-            <li><a href="#">Understanding Cloud Computinga and network security fundamental</a></li>
-            <li><a href="#">Top 5 Programming Languages to Learn in 2025</a></li>
-        </ul>
-    </section>
+        <section id="best-practices">
+            <h2>Key Best Practices</h2>
+            <ul>
+                <li>Use strong, unique passwords for all accounts.</li>
+                <li>Enable multi-factor authentication (MFA) wherever possible.</li>
+                <li>Keep software and systems up to date with the latest patches.</li>
+                <li>Be cautious with email attachments and links from unknown sources.</li>
+                <li>Regularly back up important data.</li>
+                <li>Use antivirus software and firewalls.</li>
+                <li>Educate yourself on phishing and social engineering tactics.</li>
+            </ul>
+            <img src="https://images.unsplash.com/photo-1563986768609-620da13593c7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Cybersecurity best practices illustration">
+        </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions, feel free to reach out!</p>
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+        <section id="labs">
+            <h2>Hands-On Labs</h2>
+            <div class="lab">
+                <h3>Lab 1: Password Strength Testing</h3>
+                <p>Test the strength of passwords using online tools or simple scripts. Objective: Understand what makes a password strong.</p>
+                <img src="https://images.unsplash.com/photo-1585079542156-2755d9c8a60d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Password security image">
+            </div>
+            <div class="lab">
+                <h3>Lab 2: Setting Up MFA</h3>
+                <p>Enable MFA on a sample account (e.g., email). Objective: Learn how MFA adds an extra layer of security.</p>
+                <img src="https://images.unsplash.com/photo-1614064641938-3bbe7a941ac9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="MFA setup image">
+            </div>
+            <div class="lab">
+                <h3>Lab 3: Phishing Detection</h3>
+                <p>Analyze sample emails to identify phishing attempts. Objective: Recognize common phishing indicators.</p>
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Phishing email detection">
+            </div>
+        </section>
+    </div>
 
     <footer>
-        <p>&copy; 2025 IT Solutions for my wife Nameah</p>
+        <p>&copy; 2025 Cybersecurity Labs. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
